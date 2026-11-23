@@ -1,0 +1,21 @@
+{
+  "org": "dropbox",
+  "repo": "rust-brotli",
+  "versions": [
+    {
+      "commit": "21de815f394796ef6ad2b312b7a00da2efa7b226",
+      "tag": "8.0.3",
+      "parsed_at": "2026-11-23T05:30:02.595740+00:00"
+    },
+    {
+      "commit": "9651aa3ebfd23be83ca14d914fba2d7c12b32d2f",
+      "tag": "8.0.4",
+      "parsed_at": "2026-11-23T00:57:22.810622+00:00"
+    },
+    {
+      "commit": "a51b65e75f68e3485be12bc816118e523e95647d",
+      "tag": "9.0.0",
+      "parsed_at": "2026-11-22T18:29:12.335631+00:00"
+    }
+  ]
+}
