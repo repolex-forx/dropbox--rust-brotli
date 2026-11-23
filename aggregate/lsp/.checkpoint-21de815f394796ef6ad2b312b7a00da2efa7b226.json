@@ -1,0 +1,38 @@
+{
+  "commit_sha": "21de815f394796ef6ad2b312b7a00da2efa7b226",
+  "completed_files": [
+    "src/bin/util.rs",
+    "src/concat/mod.rs",
+    "src/enc/backward_references/mod.rs",
+    "src/enc/brotli_bit_stream.rs",
+    "src/enc/compress_fragment.rs",
+    "src/enc/find_stride.rs",
+    "src/enc/metablock.rs",
+    "src/enc/multithreading.rs",
+    "src/enc/static_dict.rs",
+    "src/enc/threading/test.rs",
+    "src/enc/writer.rs",
+    "src/ffi/multicompress/mod.rs"
+  ],
+  "completed_types": [],
+  "stats": {
+    "graph_uri": "https://repolex.ai/r/dropbox/rust-brotli/lsp/21de815f394796ef6ad2b312b7a00da2efa7b226",
+    "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/21de815f394796ef6ad2b312b7a00da2efa7b226.nq.gz",
+    "call_sites": 10679,
+    "import_statements": 283,
+    "call_targets_resolved": 3293,
+    "import_targets_resolved": 0,
+    "symbols_exported": 0,
+    "external_resolved": 0,
+    "dataflow_arg_to_param": 0,
+    "dataflow_return_to_call": 0,
+    "errors": 0,
+    "extends_clauses": 2,
+    "implements_clauses": 372,
+    "import_modules_denormalized": 483,
+    "import_symbols_denormalized": 21,
+    "extends_class_denormalized": 2,
+    "implements_interface_denormalized": 0
+  },
+  "elapsed_seconds": 1802
+}
