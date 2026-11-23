@@ -1,0 +1,37 @@
+[2026-11-23T04:21:32Z] === ENRICH ITERATION 2 START | repo=dropbox/rust-brotli sha=21de815f ===
+[2026-11-23T04:21:32Z] [iter=2] PHASE START: enrich repo=dropbox/rust-brotli sha=21de815f runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/21de815f-enrich-iter-002.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/21de815f394796ef6ad2b312b7a00da2efa7b226.nq.gz
+[2026-11-23T04:21:40Z] [iter=2] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-11-23T04:22:33Z] [iter=2] AST store loaded triples=4156751 load_secs=52 mem_mb=1046 MB
+[2026-11-23T04:22:33Z] [iter=2] Step 2: Finding LSP targets mem_mb=1046 MB
+[2026-11-23T04:22:34Z] [iter=2] LSP targets found call_sites=10679 imports=283 extends=2 implements=372 secs=2
+[2026-11-23T04:22:35Z] [iter=2] Loaded checkpoint partial graph triples=33603
+[2026-11-23T04:22:35Z] [iter=2] Primed enclosing-def cache from persisted triples entries=405
+[2026-11-23T04:22:36Z] [iter=2] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1046 MB
+[2026-11-23T04:22:46Z] [iter=2] Position index built positions=214088 nodes_with_types=233473 secs=10 mem_mb=1046 MB
+[2026-11-23T04:22:46Z] [iter=2] Step 3: Starting LSP resolution mem_mb=1046 MB already_completed_types=[] already_completed_files=12
+[2026-11-23T04:22:46Z] [iter=2] Resolving target type target_type=call_site count=10679
+[2026-11-23T04:22:50Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=1.3 files_done=0 resolved=0 errors=0 current=src/enc/prior_eval.rs
+[2026-11-23T04:24:10Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=2.6 files_done=1 resolved=145 errors=0 current=src/enc/encode.rs
+[2026-11-23T04:27:30Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=6.0 files_done=2 resolved=700 errors=0 current=src/enc/threading/mod.rs
+[2026-11-23T04:28:23Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=6.8 files_done=3 resolved=829 errors=0 current=src/ffi/broccoli.rs
+[2026-11-23T04:28:59Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=7.4 files_done=5 resolved=953 errors=0 current=src/enc/combined_alloc.rs
+[2026-11-23T04:31:33Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=10.0 files_done=8 resolved=1481 errors=0 current=src/enc/backward_references/hq.rs
+[2026-11-23T04:33:29Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=12.0 files_done=9 resolved=1843 errors=0 current=src/enc/compress_fragment_two_pass.rs
+[2026-11-23T04:35:14Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=13.7 files_done=10 resolved=2118 errors=0 current=src/enc/cluster.rs
+[2026-11-23T04:35:47Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=14.3 files_done=11 resolved=2219 errors=0 current=src/enc/command.rs
+[2026-11-23T04:36:33Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=15.0 files_done=13 resolved=2378 errors=0 current=src/enc/interface.rs
+[2026-11-23T04:38:37Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=17.1 files_done=14 resolved=2595 errors=0 current=src/ffi/multicompress/test.rs
+[2026-11-23T04:39:55Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=18.4 files_done=17 resolved=2801 errors=0 current=src/bin/test_broccoli.rs
+[2026-11-23T04:42:35Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=21.1 files_done=18 resolved=3102 errors=0 current=src/enc/backward_references/test.rs
+[2026-11-23T04:43:07Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=21.6 files_done=19 resolved=3210 errors=0 current=src/bin/validate.rs
+[2026-11-23T04:44:02Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=22.5 files_done=22 resolved=3367 errors=0 current=src/bin/integration_tests.rs
+[2026-11-23T04:46:25Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=24.9 files_done=23 resolved=3781 errors=0 current=src/enc/stride_eval.rs
+[2026-11-23T04:47:08Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=25.6 files_done=25 resolved=3897 errors=0 current=src/enc/block_splitter.rs
+[2026-11-23T04:48:22Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=26.8 files_done=26 resolved=4239 errors=0 current=src/enc/backward_references/hash_to_binary_tree.rs
+[2026-11-23T04:49:07Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=27.6 files_done=31 resolved=4384 errors=0 current=src/enc/utf8_util.rs
+[2026-11-23T04:49:57Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=28.4 files_done=34 resolved=4555 errors=0 current=src/bin/test_threading.rs
+[2026-11-23T04:51:19Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=29.8 files_done=35 resolved=4666 errors=0 current=src/bin/tests.rs
+[2026-11-23T04:51:35Z] [iter=2] CHECKPOINT TRIGGERED elapsed_min=30.0 files_completed=48 new_files_this_iter=36 mem_mb=1046 MB
+[2026-11-23T04:51:35Z] [iter=2] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/21de815f394796ef6ad2b312b7a00da2efa7b226.nq.gz triples=78154
+[2026-11-23T04:51:36Z] [iter=2] Checkpoint written, exiting with code 7
+[2026-11-23T04:51:36Z] [iter=2] PHASE END: enrich (checkpointed) elapsed_s=1803 elapsed_min=30.0 files_completed=48
