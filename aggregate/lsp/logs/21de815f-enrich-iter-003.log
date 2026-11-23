@@ -1,0 +1,34 @@
+[2026-11-23T04:54:00Z] === ENRICH ITERATION 3 START | repo=dropbox/rust-brotli sha=21de815f ===
+[2026-11-23T04:54:00Z] [iter=3] PHASE START: enrich repo=dropbox/rust-brotli sha=21de815f runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/21de815f-enrich-iter-003.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/21de815f394796ef6ad2b312b7a00da2efa7b226.nq.gz
+[2026-11-23T04:54:09Z] [iter=3] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-11-23T04:55:04Z] [iter=3] AST store loaded triples=4156751 load_secs=54 mem_mb=939 MB
+[2026-11-23T04:55:04Z] [iter=3] Step 2: Finding LSP targets mem_mb=939 MB
+[2026-11-23T04:55:06Z] [iter=3] LSP targets found call_sites=10679 imports=283 extends=2 implements=372 secs=2
+[2026-11-23T04:55:10Z] [iter=3] Loaded checkpoint partial graph triples=78154
+[2026-11-23T04:55:10Z] [iter=3] Primed enclosing-def cache from persisted triples entries=873
+[2026-11-23T04:55:11Z] [iter=3] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=939 MB
+[2026-11-23T04:55:24Z] [iter=3] Position index built positions=214088 nodes_with_types=233473 secs=13 mem_mb=939 MB
+[2026-11-23T04:55:24Z] [iter=3] Step 3: Starting LSP resolution mem_mb=939 MB already_completed_types=[] already_completed_files=48
+[2026-11-23T04:55:24Z] [iter=3] Resolving target type target_type=call_site count=10679
+[2026-11-23T04:55:28Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=1.5 files_done=0 resolved=0 errors=0 current=src/bin/catbrotli.rs
+[2026-11-23T04:56:11Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=2.2 files_done=3 resolved=66 errors=0 current=src/enc/mod.rs
+[2026-11-23T04:56:44Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=2.7 files_done=6 resolved=165 errors=0 current=src/enc/block_split.rs
+[2026-11-23T04:57:26Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=3.4 files_done=10 resolved=283 errors=0 current=src/enc/ir_interpret.rs
+[2026-11-23T05:00:06Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=6.1 files_done=14 resolved=692 errors=0 current=c/go/brotli/header.go
+[2026-11-23T05:00:37Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=6.6 files_done=18 resolved=1122 errors=0 current=c/go/main.go
+[2026-11-23T05:01:14Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=7.2 files_done=22 resolved=1271 errors=0 current=research/concatenate_some.py
+[2026-11-23T05:02:05Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=8.1 files_done=24 resolved=1392 errors=0 current=c/py/testdata.py
+[2026-11-23T05:02:57Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=9.0 files_done=28 resolved=1594 errors=0 current=c/multiexample.c
+[2026-11-23T05:03:33Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=9.6 files_done=29 resolved=1671 errors=0 current=c/catbrotli.c
+[2026-11-23T05:04:04Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=10.1 files_done=37 resolved=1740 errors=0 current=c/go/brotli/brotli/encode.h
+[2026-11-23T05:04:16Z] [iter=3] Target type resolved target_type=call_site resolved=1745 errors=0 secs=532 mem_mb=939 MB
+[2026-11-23T05:04:16Z] [iter=3] Resolving target type target_type=import_statement count=283
+[2026-11-23T05:04:23Z] [iter=3] Target type resolved target_type=import_statement resolved=70 errors=0 secs=6 mem_mb=939 MB
+[2026-11-23T05:04:23Z] [iter=3] Resolving target type target_type=extends_clause count=2
+[2026-11-23T05:04:24Z] [iter=3] Target type resolved target_type=extends_clause resolved=2 errors=0 secs=1 mem_mb=939 MB
+[2026-11-23T05:04:24Z] [iter=3] Resolving target type target_type=implements_clause count=372
+[2026-11-23T05:04:27Z] [iter=3] Target type resolved target_type=implements_clause resolved=1 errors=0 secs=3 mem_mb=939 MB
+[2026-11-23T05:26:34Z] [iter=3] Step 5: Writing final enrichment file triples=144245
+[2026-11-23T05:26:36Z] [iter=3] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/21de815f394796ef6ad2b312b7a00da2efa7b226.nq.gz size_kb=3306
+[2026-11-23T05:26:36Z] [iter=3] Checkpoint cleared (enrichment complete)
+[2026-11-23T05:26:36Z] [iter=3] PHASE END: enrich elapsed_s=1956 elapsed_min=32.6 total_triples=144245
